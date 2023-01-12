@@ -14,10 +14,10 @@ dislocation
 %Additional Information----------------------------------------------------
 %Chromosome: Constants for Single Isolated Dislocation
 %EDIT THIS-----------------------------------------------------------------
-p=10; % Population size: 100 Chromosomes with (n x m) matrix
-c=1; % number of pairs of chromosomes to be crossovered %30 percent crossover
-m=2; % number chromosomes to be mutated %30 mutation
-tg=3; % Total number of generations 
+p=15; % Population size: 100 Chromosomes with (n x m) matrix
+c=5; % number of pairs of chromosomes to be crossovered %30 percent crossover
+m=5; % number chromosomes to be mutated %30 mutation
+tg=25; % Total number of generations 
 vary_const = 0.1; %PERCENT OF how much the single isolated dislocation consts will vary
 gene_mutation_rate = 0.3; %how much of the chromosome should be mutated
 mut_vary = 0.1; %up to much a mutation will vary const whether increase or decrease

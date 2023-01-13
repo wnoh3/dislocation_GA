@@ -18,9 +18,9 @@ p=15; % Population size: 100 Chromosomes with (n x m) matrix
 c=5; % number of pairs of chromosomes to be crossovered %30 percent crossover
 m=5; % number chromosomes to be mutated %30 mutation
 tg=50; % Total number of generations 
-vary_const = 0.1; %PERCENT OF how much the single isolated dislocation consts will vary
+vary_const = 0.5; %PERCENT OF how much the single isolated dislocation consts will vary
 gene_mutation_rate = 0.7; %how much of the chromosome should be mutated
-mut_vary = 0.1; %up to much a mutation will vary const whether increase or decrease
+mut_vary = 0.5; %up to much a mutation will vary const whether increase or decrease
 %--------------------------------------------------------------------------
 %set following from const_fp down 
 const_fp = 'D:\Research\FinalAFOSRReview\SpectralAnalysis\AnalyticalTry2\Dec6Lpimplementation\spectral\6Jan_singledisloconst\n100_m100_sub288x288_LxLy345.6A_PBC_i0_optnonpiece_nonpieceplot_V2\';

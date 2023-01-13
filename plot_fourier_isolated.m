@@ -90,21 +90,21 @@ function [sigxx_2,sigxy_2,sigyy_2] = plot_fourier_isolated(Pnm_2_11,Qnm_2_11,Rnm
 
     %save plots
     %%
-    figName= 'Optimal S11 Scaled Contours';
+    figName= 'Optimal Isolated S11 Scaled Contours';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigxx_2,'CDataMapping','scaled');
     caxis([min(sigxx_2(:)),max(sigxx_2(:))]*0.1)
     colorbar
     axis equal
     saveas(f, [destDirectory,figName,'.png']);
-    figName= 'Optimal S12 Scaled Contours';
+    figName= 'Optimal Isolated S12 Scaled Contours';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigxy_2,'CDataMapping','scaled');
     caxis([min(sigxy_2(:)),max(sigxy_2(:))]*0.1)
     colorbar
     axis equal
     saveas(f, [destDirectory,figName,'.png']);
-    figName= 'Optimal S22 Scaled Contours';
+    figName= 'Optimal Isolated S22 Scaled Contours';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigyy_2,'CDataMapping','scaled');
     caxis([min(sigyy_2(:)),max(sigyy_2(:))]*0.1)
@@ -113,21 +113,21 @@ function [sigxx_2,sigxy_2,sigyy_2] = plot_fourier_isolated(Pnm_2_11,Qnm_2_11,Rnm
     saveas(f, [destDirectory,figName,'.png']);
     
     %%
-    figName= 'Optimal S11';
+    figName= 'Optimal Isolated S11';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigxx_2,'CDataMapping','scaled');
     caxis([min(sigxx_2(:)),max(sigxx_2(:))])
     colorbar
     axis equal
     saveas(f, [destDirectory,figName,'.png']);
-    figName= 'Optimal S12';
+    figName= 'Optimal Isolated S12';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigxy_2,'CDataMapping','scaled');
     caxis([min(sigxy_2(:)),max(sigxy_2(:))])
     colorbar
     axis equal
     saveas(f, [destDirectory,figName,'.png']);
-    figName= 'Optimal S22';
+    figName= 'Optimal Isolated S22';
     f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigyy_2,'CDataMapping','scaled');
     caxis([min(sigyy_2(:)),max(sigyy_2(:))])

@@ -18,8 +18,8 @@ for i = 1:n %for every crossover chromosome pair to be created
     end
 
     % which genes to crossover
-    const_mut_num_n = randi(term_n); %randomly determine how many n terms out of term_n will be crossed
-    const_mut_num_m = randi(term_m); %randomly determine how many m terms out of term_m will be crossed
+    const_mut_num_n = round((term_n-term_n/2)*rand(1) + term_n/2); %force range to be between 50-100 %randi(term_n); %randomly determine how many n terms out of term_n will be crossed
+    const_mut_num_m = round((term_m-term_m/2)*rand(1) + term_m/2); %force range to be between 50-100 %randi(term_m); %randomly determine how many m terms out of term_m will be crossed
     const_mut_n = randi(term_n,const_mut_num_n,1); %const_mut_num_n x 1
     const_mut_m = randi(term_m,1,const_mut_num_m); %1 x const_mut_num_m
 %     const_mut_nm = [const_mut_n,const_mut_m']; %term_n x 2

@@ -17,9 +17,9 @@ dislocation
 p=15; % Population size: 100 Chromosomes with (n x m) matrix
 c=5; % number of pairs of chromosomes to be crossovered %30 percent crossover
 m=5; % number chromosomes to be mutated %30 mutation
-tg=25; % Total number of generations 
+tg=50; % Total number of generations 
 vary_const = 0.1; %PERCENT OF how much the single isolated dislocation consts will vary
-gene_mutation_rate = 0.3; %how much of the chromosome should be mutated
+gene_mutation_rate = 0.7; %how much of the chromosome should be mutated
 mut_vary = 0.1; %up to much a mutation will vary const whether increase or decrease
 %--------------------------------------------------------------------------
 %set following from const_fp down 
@@ -38,7 +38,7 @@ MD_path = strcat(MD_path,GB);
 % MD_path = strcat(const_fp,'Subset_Spectral'); %test use analytical itself:
 %Destination Directory-----------------------------------------------------
 dest = 'D:\Research\FinalAFOSRReview\GeneticAlgorithm\dislocation_GA\';
-fpname = strcat('Jan12_test_parfor_speed_pop',num2str(p),'_tg',num2str(tg));
+fpname = strcat('Jan12_test_parfor_speed_pop',num2str(p),'_tg',num2str(tg),'_genemutrate',num2str(gene_mutation_rate),'_mut_vary',num2str(mut_vary));
 destdir = strcat(dest,fpname,'\');
 mkdir(destdir)
 

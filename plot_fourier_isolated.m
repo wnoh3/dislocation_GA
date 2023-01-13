@@ -98,7 +98,7 @@ function [sigxx_2,sigxy_2,sigyy_2] = plot_fourier_isolated(Pnm_2_11,Qnm_2_11,Rnm
     axis equal
     saveas(f, [destDirectory,figName,'.png']);
     figName= 'Optimal S12 Scaled Contours';
-    f = figure('Name', figName ,'visible','pff');
+    f = figure('Name', figName ,'visible','off');
     image(linspace(-spec_plot_xlength,spec_plot_xlength,spec_plot_subsetx),linspace(-spec_plot_ylength,spec_plot_ylength,spec_plot_subsety),sigxy_2,'CDataMapping','scaled');
     caxis([min(sigxy_2(:)),max(sigxy_2(:))]*0.1)
     colorbar
